@@ -71,4 +71,4 @@ This was the most well written and complete Linux script out there for years and
 
 ## Author
 Mert Surmeli
-@@56616C6F72
+**@56616C6F72**
