@@ -53,7 +53,7 @@ user@host:<dir>$ sudo ./Emperor.sh
 Once it's finished running. Emperor will dump 2 files into the same directory it resides. 
 
 1. Hostname-date-time.tar.gz
-2. consolelog-date-time.txt
+2. consolelog-date-time.txt (Think of this as a debug/console log)
 
 If you are going to get this transfered across network. **I highly recommend encrypting it!**
 
