@@ -1,4 +1,4 @@
-# Emperor Linux IR Triage Data Collection 
+# Emperor Linux IR Triage Collection 
 Emperor is a bash script that collects extensive data from almost all Linux distributions to help DFIR professionals triage cyber incidents.
 
 - [What does it Collect](#what-does-it-collect)
