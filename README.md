@@ -63,7 +63,7 @@ get_debugfstimeline function by far takes longest to run and output is not easil
 You can comment this function out if you like to speed up the process. To give you an idea, the whole script takes ~36 mins on an Ubuntu 16 VM with full package. With get_debugfstimeline commented out. This can be lowered down to 5-10 mins.  
 
 ## Other Triage Tools
-I have tried to use what is already out there to build this script. Some had great logging. Some had great functionality. Over the years, functionality was added by coding or taking inspiration or code snippets. I would like to mention a particular one to pay respect to them and thank them for their contributions. 
+I have tried to use what is already out there to build this script. Some had great logging. Some had great functionality. Over the years, functionality was added by coding or using code snippets from these. I would like to mention a particular one to pay respect to them and thank them for their contributions. 
 
 - [Recruit-CSIRT/LinuxTriage](https://github.com/Recruit-CSIRT/LinuxTriage) written by [Tatsuya Ichida](https://github.com/icchida)
 
