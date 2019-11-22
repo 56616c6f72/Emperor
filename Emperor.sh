@@ -345,12 +345,11 @@ get_logs() {
 	
 	get_deleted_files 2>&1
     get_process_Exeandfds 2>&1
-} >> "$CONSOLELOG"
 
-
-# end timestamp
+    # end timestamp
     ENDtime=$(date '+%Y-%m-%d %H:%M:%S %Z %:z')
 } >> "$CONSOLELOG"
+
 
 echo -e "\nCompressing to tar.gz  ..."
 CUR_DIR=$( cd "$( dirname ""${BASH_SOURCE[0]}"" )" && pwd )
