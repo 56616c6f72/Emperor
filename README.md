@@ -37,6 +37,7 @@ In Summary, This script will try to collect all of the below items with most rel
 - Kernel Modules
 - Installed Packages
 
+I recommend skimming through the code to get a full understanding never the less. :)
 
 ## Requirements
 For most part none. It uses default packages available in most linux distributions. However there are few checks placed and if it's not possible to run the command it might skip it or take a copy of the raw files. 
