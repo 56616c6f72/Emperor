@@ -67,7 +67,7 @@ I have tried to use what is already out there to build this script. Some had gre
 
 - [Recruit-CSIRT/LinuxTriage](https://github.com/Recruit-CSIRT/LinuxTriage) written by [Tatsuya Ichida](https://github.com/icchida)
 
-This was the most well written and complete Linux script out there for years and have given me great insparation to create Emperor. 
+This was the most well written and complete Linux script out there for years and have given me great inspiration to create Emperor. 
 
 ## Author
 Mert Surmeli
