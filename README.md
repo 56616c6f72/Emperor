@@ -14,7 +14,7 @@ In Summary, This script will try to collect all of the below items with most rel
 - All Running Processes
 - Listing of all File Descriptors for all process
 - Listing of /proc/PID/exe symbolic link for all process
-- All Network Active Network Connections
+- All Active Network Connections
 - All Network Information 
 - Bash History for all users
 - SSH Known hosts for all users 
