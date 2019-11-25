@@ -162,6 +162,17 @@ ls  -l /proc/*/exe 2>/dev/null > "$SAVETO/process_exeLinks.txt"
 
 }
 
+get_process_cmdline(){
+
+while read line 
+do
+
+	echo "$line":$(cat "$line" 2> /dev/null) >> "$SAVETO/proc_cmdline.txt"
+
+done < <(find /proc/ -name cmdline 2> /dev/null)
+
+}
+
 #Get list of all services and cron information
 get_servicereg(){
 
@@ -330,7 +341,9 @@ get_logs() {
 	echo -e "Collecting triage data..."
 
 {
-    get_process 2>&1
+    	get_process 2>&1
+	get_process_cmdline 2>&1
+	get_process_Exeandfds 2>&1
 	get_networkdata 2>&1
 	get_filetimeline 2>&1
 	get_logs 2>&1
@@ -338,13 +351,11 @@ get_logs() {
 	get_userinfo 2>&1
    	get_systeminfo 2>&1
    	get_servicereg 2>&1
+	get_deleted_files 2>&1
 	
 	#Comment get_debugfstimeline if you wish do lower the runtime of the script
 	get_debugfstimeline 2>&1
-    
-	
-	get_deleted_files 2>&1
-    get_process_Exeandfds 2>&1
+    	
 
     # end timestamp
     ENDtime=$(date '+%Y-%m-%d %H:%M:%S %Z %:z')
