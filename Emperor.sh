@@ -52,9 +52,12 @@ get_networkdata(){
         then
             # gnu
             netstat -pvWanoee
-        else
+        elif netstat -pvTanoee &> /dev/null
+	then
             # redhat/centos
             netstat -pvTanoee
+	else
+	    netstat -anp
         fi
     } > "$SAVETO/netstat.txt"
 
@@ -129,8 +132,7 @@ get_filetimeline(){
 # This is slightly more in deep then get_filetimeline. As this will also get the creation time. However this function takes waaaaaaaaaay longer than others might want to consider commenting out. If you do not wish to get this info. Don't comment it out here though :) comment it out in the main
 get_debugfstimeline(){
 
-#Get list of all active inodes. 
-find / -type f -ls | awk '{print $1}' > inodes.txt
+#Get root drive
 myrootdrive=$(df | awk '{print $1}' | grep /)
 
 #Get debugfs stat for all inodes
@@ -139,9 +141,7 @@ do
 
 	debugfs -R "stat <$line>" "$myrootdrive" | cat >> "$SAVETO/full_inode_extract_output.txt" 
    
-done < inodes.txt
-
-rm -rf inodes.txt
+done < <(find / -xdev -type f -ls 2>/dev/null | awk '{print $1}') 
 	
 }
 
