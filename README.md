@@ -29,7 +29,7 @@ In Summary, This script will try to collect all of the below items with most rel
 - shadow.txt file
 - group.txt file
 - File System Timeline in csv (Except Mount Points) (Inode,Full Path,Last Access,Last Modification,Last Status Change,User,Group,File Permissions,File Size(bytes),Symbolic Link)
-- Debugfs stats for all files (Except Mount Points)
+- Debugfs stats for all files (Except Mount Points) (Can be turned into a timeline using Pingu)
 - Debugfs Deleted inodes
 - All Users currently logged in
 - History of all logins and logouts
@@ -59,7 +59,7 @@ Once it's finished running. Emperor will dump 2 files into the same directory it
 If you are going to get this transfered across network. **I highly recommend encrypting it!**
 
 ## Advice
-get_debugfstimeline function by far takes longest to run and output is not easily timelineable. However as far as i know, this is the only way to get creation times for files which can be a key artifact. I am hoping to develop a parser for this in the future to create a timeline out of this.
+get_debugfstimeline function by far takes longest to run and output is not easily timelineable. However as far as i know, this is the only way to get creation times for files which can be a key artifact. You can use pingu to turn this into a csv format so you can use it as a timeline.
 
 You can comment this function out if you like to speed up the process. To give you an idea, the whole script takes ~36 mins on an Ubuntu 16 VM with full package. With get_debugfstimeline commented out. This can be lowered down to 5-10 mins.  
 
