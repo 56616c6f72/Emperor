@@ -70,6 +70,10 @@ I have tried to use what is already out there to build this script. Some had gre
 
 This was the most well written and complete Linux script out there for years and have given me great inspiration to create Emperor. 
 
+- [AugustTom](https://github.com/AugustTom)
+
+Thanks to AugustTom also for writting debugfs parser Pingu.
+
 ## Author
 Mert Surmeli
 **@56616C6F72**
