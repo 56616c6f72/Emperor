@@ -1,3 +1,6 @@
+**PLEASE NOTE** - Emperor is not being maintained anymore. Instead I recommend using Cat-Scale which is actively maintained by me and other incident response professionals. Cat-Scale: https://github.com/FSecureLABS/LinuxCatScale/
+
+
 # Emperor Linux IR Triage Collection 
 Emperor is a bash script that collects extensive data from almost all Linux distributions to help DFIR professionals triage cyber incidents.
 
